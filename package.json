@@ -1,0 +1,19 @@
+{
+  "name": "crmpedro",
+  "version": "1.0.0",
+  "description": "Um sistema de CRM moderno, simples e funcional para gerenciar clientes e acompanhar o funil de vendas de sites.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run start",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

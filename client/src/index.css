@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-zinc-950 text-zinc-100 font-sans antialiased;
+}
+
+/* Custom scrollbar - Dark Mode */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-zinc-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-800 rounded-full hover:bg-red-900/50 transition-colors;
+}
+
+/* Glass effect classes */
+.glass {
+  @apply bg-zinc-900/50 backdrop-blur-md border border-zinc-800/50;
+}
+
+.glass-red {
+  @apply bg-red-500/5 backdrop-blur-md border border-red-500/10;
+}
+
+.card-premium {
+  @apply bg-zinc-900 border border-zinc-800 hover:border-red-500/30 transition-all duration-300;
+}
