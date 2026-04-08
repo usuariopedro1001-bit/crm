@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5050/api',
+ baseURL: 'https://crm-1-uyd0.onrender.com/api',
 });
 
 // Add token to requests
